@@ -1,0 +1,21 @@
+
+
+# alt + down/up = move a line down or up
+# shift + alt + down/up = duplicate a line down or up
+# ctrl + D = rewrite the nearest duplicate to the line
+
+# :::::::::::::::: TO PUSH CODE TO GITHUB REPO  :::::::::::::::;
+# for new git-repo git init then continue with the rest
+# (1) git add .
+# (2) git commit -m "my assignment"  // "my assignment" is to denote the name the new file would be named inside the my python code repo
+# (3) git push -u origin master
+# (4) react is a library, vue and angular is a framework
+# (5) php doesnt work for mobile app , only for web app
+# (6) example of api fakestoreapi.com
+# (7) json.parse to send, json.stringify to receive, in django its seralisation
+# (8) to design a project, you must first picture the design to know what to design latest project that is attractable
+# (9) to identify the properties of the instance of a class;=def__init__(self,props):, self in class is used to identify the instance of a class; same as this in javascript
+# (10) class of a class;= def class(cls)//properties of a class takes self
+# (11) postgress, django and insomnia are api tester
+# (12) activate before installing anything, makemigrations then migrate
+# (13) pip install psycopg2
