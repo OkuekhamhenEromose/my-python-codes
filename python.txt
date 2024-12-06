@@ -1,4 +1,19 @@
 
+# NB = GENERAL EXPLANATION OF BACKEND-FRONTEND RELATIONSHIP, DATABASE AND API
+#::::::::::::::;  FRONTEND AND WEBAPP :::::::::::::::::::;;
+The “frontend” is a set of files (some JS maybe, always some HTML) that also live on one specific computer. But a user can go and download them onto their computer using a browser. The browser can then render them as a web app. And that web app is the thing through which they call the API commands.
+#:::::::::::::;  BACKEND-FRONTEND RELATIONSHIP  :::::::::::::
+The backend is the communication between the frontend and the database, that means the backends job is to grab data (inputs) from the frontend and then send and save it to the database.
+For example a user will register an account to get the option to login to a website to get access to additional services (communication with the company, buying a product, reading premium content etc.). When the user registers an account the backend will send the account registration data to the database and store it there. Then the backend will send a confirmation email (which the user needs to verify before he/she gets access to the login area). After confirmation is send the backend will approve the registration and the user can login to his/her account. After the login process the user will see a welcome message in the login area (Welcome back username!). The backend will grab the username from the database and displays it inside the welcome message. After login the user may also have the option to download a specific content (for example a video tutorial), so the backend will grab the content (video tutorial) from the database and offers a download inside the users login area.
+#:::::::::::::::  DATABASE  :::::::::::::::::::::::::
+A web site has to reside somewhere. When you log onto a web site, you are talking the the server (backend). For a simple static web site (like mentioned above), it may be just “serving” back those files to the client. But when we talk about a backend, we’re talking about something more dynamic, where it has to interact. In some cases, those web pages might be build dynamically. In some cases data is requested and sent back and forth. Technically you can have a backend that is just APIs, for requesting and getting data.
+Your database is just a part of your backend, where you store data that you want to persist. Your server has memory while it is running, but if you want data to survive having the server shut down and/or if the data is too large to store in the server’s active memory (especially with a lot of users, that would run out quickly) you can store it in the server. You’re going to access that server through the backend so you can control access
+#:::::::::::::::::;  API  ::::::::::::::::::;;;
+The working principle of an API is commonly expressed through the request-response communication between a client and a server. The client is any front-end application that a user interacts with. The server is in charge of backend logic and database operations. In this scenario, an API works as a middle layer between the client and the server, making it possible to send data requests and responses.
+The Red Hat specialists note that APIs are sometimes considered contracts, where documentation is an agreement between the parties, "If party 1 sends a remote request structured a particular way, this is how party 2 software will respond."  This contract takes the form of an API specification or protocol — an architectural blueprint that describes the interface behavior and serves as a rough guide on how to build a particular API (we’ll talk about the most common API specifications later). Among other things, the protocol defines core API components
+An API is the interface via which you interact with a program or application programatically (rather than say via a user interface, or via physical buttons or whatever). That’s all it is, normally a set of commands that the application exposes to let you use it. So in this case, the API for a server might be something like:
+https://example.com/api/users
+https://example.com/api/user/1
 
 # alt + down/up = move a line down or up
 # shift + alt + down/up = duplicate a line down or up
@@ -19,3 +34,8 @@
 # (11) postgress, django and insomnia are api tester
 # (12) activate before installing anything, makemigrations then migrate
 # (13) pip install psycopg2
+# (14) to remove a folder in a command line = rm -r <foldername>
+# (15) mongodb(database)= works majorly with Express and Node,mysql(database) works majorly with php, Postgress(database) works easier majorly with django, php, Node
+# (16) Databases are commonly used on the back-end of web applications. These databases provide an interface to save data in a persistent way to memory. Storing the data in a database both reduces the load on the main memory of the server CPU and allows the data to be retrieved if the server crashes or loses power.
+
+
